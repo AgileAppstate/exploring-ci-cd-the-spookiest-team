@@ -16,3 +16,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: python3 ./main.py
+      - name: Run pylint
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install pylint
+          pylint ./main.py
