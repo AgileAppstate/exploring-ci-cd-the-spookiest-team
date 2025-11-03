@@ -8,6 +8,7 @@ on:
   workflow_dispatch:
 jobs:
   my_job:
-    name: Test Job
     runs-on: ubuntu-latest
-    run: python main.py
+    steps:
+      - name: Run Python Script
+        run: python main.py
