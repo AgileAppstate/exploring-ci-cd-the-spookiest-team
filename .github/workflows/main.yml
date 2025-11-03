@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Python Script
-        run: ${{ github.workspace }}/python main.py
+        run: python ${{ github.workspace }}/main.py
